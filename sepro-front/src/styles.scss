@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: url("https://app.qaliwarma.gob.pe/Maestro/Content/img/backgrounds/body.jpg") left top repeat;
+  app-sepro-reports {
+
+    app-header {
+
+    }
+    app-footer {
+      .footer {
+        background: linear-gradient(154deg, #5B4199 0, #8970c2 100%);
+      }
+    }
+  }
+}
