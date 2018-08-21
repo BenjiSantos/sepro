@@ -1,14 +1,47 @@
+/* Declare variables for colors */
+$color-purple-qaliwarma: #563d7c;
+$color-white: white;
+
 /* You can add global styles to this file, and also import other style files */
 body {
   background: url("https://app.qaliwarma.gob.pe/Maestro/Content/img/backgrounds/body.jpg") left top repeat;
+  padding-top: 56px;
   app-sepro-reports {
 
     app-header {
-
+      .bg-header {
+        background-color: $color-purple-qaliwarma;
+      }
+      .navbar {
+        .navbar-brand {
+          background: url("https://www.qaliwarma.gob.pe/wp-content/themes/qaliwarma2017/images/qaliwarma.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 170px;
+          height: 40px;
+          background-size: auto 32px;
+        }
+        .navbar-nav .nav-link {
+          color: $color-white;
+        }
+      }
     }
     app-footer {
-      .footer {
-        background: linear-gradient(154deg, #5B4199 0, #8970c2 100%);
+      footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: $color-purple-qaliwarma;
+        text-align: center;
+        .footer-content {
+          margin-top: 15px;
+          .footer-credit {
+            color: $color-white;
+            font-size: 12px;
+          }
+        }
       }
     }
   }
